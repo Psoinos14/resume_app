@@ -22,11 +22,14 @@ class Api::StudentsController < ApplicationController
       personal_url: params[:personal_url],
       resume_url: params[:resume_url],
       github_url: params[:github_url],
-      photo: params[:photo])
+      photo: params[:photo],
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
+    )
     if @student.save
       render 'show.json.jb'
     else
-      render json: {errors: @student.errors.full_messages}, status: :unprocessible_entity
+      render json: { errors: @student.errors.full_messages }, status: :unprocessible_entity
     end
   end
 
