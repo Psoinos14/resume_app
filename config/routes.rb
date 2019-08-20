@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
   namespace :api do
-
     get '/students' => 'students#index'
+
+    get '/educations' => 'educations#index'
+    get '/educations/:id' => 'educations#show'
+    post '/educations' => 'educations#create'
   end
 end
