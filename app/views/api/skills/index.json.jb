@@ -1,0 +1,5 @@
+@skills.map do |skill| {
+    student_id: skill.student_id,
+    name: skill.name,
+  }
+end

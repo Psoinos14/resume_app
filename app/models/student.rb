@@ -1,5 +1,7 @@
 class Student < ApplicationRecord
   has_many :educations
-  # belongs_to :user
   has_many :experiences
+  has_many :skills
+  has_many :capstones
+  # belongs_to :user
 end
