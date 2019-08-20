@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 2019_08_20_004628) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "educations", force: :cascade do |t|
+    t.integer "student_id"
+    t.string "start_date"
+    t.string "end_date"
+    t.string "job_title"
+    t.string "company_name"
+    t.string "details"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "experiences", force: :cascade do |t|
     t.string "start_date"
     t.string "end_date"
