@@ -14,8 +14,8 @@ class Api::EducationsController < ApplicationController
     @education.student_id = params[:student_id]
     @education.start_date = params[:start_date]
     @education.end_date = params[:end_date]
-    @education.job_title = params[:job_title]
-    @education.company_name = params[:company_name]
+    @education.degree = params[:degree]
+    @education.university = params[:university]
     @education.details = params[:details]
     if @education.save
       render 'show.json.jb'
@@ -29,8 +29,8 @@ class Api::EducationsController < ApplicationController
     @education.student_id = params[:student_id] || @education.student_id
     @education.start_date = params[:start_date] || @education.start_date
     @education.end_date = params[:end_date] || @education.end_date
-    @education.job_title = params[:job_title] || @education.job_title
-    @education.company_name = params[:company_name] || @education.company_name
+    @education.degree = params[:degree] || @education.degree
+    @education.university = params[:university] || @education.university
     @education.details = params[:details] || @education.details
     if @education.save
       render 'show.json.jb'
