@@ -1,1 +1,8 @@
-@education
+{
+  student_id: @education.student_id,
+  start_date: @education.start_date,
+  end_date: @education.end_date,
+  degree: @education.degree,
+  university: @education.university,
+  details: @education.details
+}
