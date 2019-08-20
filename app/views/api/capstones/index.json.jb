@@ -1,0 +1,9 @@
+@capstones.map do |capstone|
+  {
+    student_id: capstone.student_id,
+    name: capstone.name,
+    description: capstone.description,
+    url: capstone.url,
+    screenshot: capstone.screenshot,
+  }
+end
