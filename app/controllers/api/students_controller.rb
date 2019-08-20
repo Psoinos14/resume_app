@@ -23,8 +23,11 @@ class Api::StudentsController < ApplicationController
       resume_url: params[:resume_url],
       github_url: params[:github_url],
       photo: params[:photo])
-    @student.save
-    render 'show.json.jb'
+    if @student.save
+      render 'show.json.jb'
+    else
+      render json: {errors: @student.errors.full_messages}, status: :unprocessible_entity
+    end
   end
 
   def update
@@ -41,7 +44,17 @@ class Api::StudentsController < ApplicationController
     @student.resume_url = params[:resume_url],
     @student.github_url = params[:github_url],
     @student.photo = params[:photo]
-    @student.save
-    render 'show.json.jb'
+    if @student.save
+      render 'show.json.jb'
+    else
+      render json: {errors: @student.errors.full_messages}, status: :unprocessible_entity
+    end
+  end
+
+  def destroy
+    the_id = params[:id]
+    @student = Student.find_by(id: the_id)
+    @student.destroy
+    render 'destroy.json.jb'
   end
 end
