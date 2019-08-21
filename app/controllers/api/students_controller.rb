@@ -14,7 +14,6 @@ class Api::StudentsController < ApplicationController
     @student = Student.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
-      email: params[:email],
       phone_number: params[:phone_number],
       bio: params[:bio],
       linkedin: params[:linkedin],
@@ -23,6 +22,7 @@ class Api::StudentsController < ApplicationController
       resume_url: params[:resume_url],
       github_url: params[:github_url],
       photo: params[:photo],
+      email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
     )
