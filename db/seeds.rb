@@ -1,5 +1,5 @@
 Student.create(first_name: "Rishi", last_name: "Somanchi", email: "rishisomanchi@gmail.com", phone_number: "6865207000", bio: "i am brown", linkedin: "www.linkedin.com/rishi", twitter: "@Rishi Somanchi", personal_url: "www.rishi.com", resume_url: "www.rishi.edu", github_url: "www.github.com/rishi", photo: "asdlfnalsfdn")
-Student.create(first_name: "Shane", last_name: "Psoinos", email: "smp1993@gmail.com", phone_number: "7960795403", bio: "hello am a bio", linkedin: "www.linkedin.com/shane", twitter: "@Shane Psoinos", personal_url: "www.shane.com", resume_url: "www.shane.edu", github_url: "www.github.com/shane", photo: "sadgkjbdaglkjabssjg")
+Student.create(first_name: "Shane", last_name: "Psoinos", email: "smp1993@gmail.com", phone_nura", bio: "hello am a bio", linkedin: "www.linkedin.com/shane", twitter: "@Shane Psoinos", personal_url: "www.shane.com", resume_url: "www.shane.edu", github_url: "www.github.com/shane", photo: "sadgkjbdaglkjabssjg")
 Student.create(first_name: "Sim", last_name: "Sitzer", email: "sim@gmail.com", phone_number: "9765632478", bio: "hello i am sim sitzer and i have cool backgrounds on my zoom meetings", linkedin: "www.linkedin.com/sim", twitter: "@simsitz", personal_url: "www.sim.com",resume_url: "www.sim.edu", github_url: "www.github.com/sim", photo: "asdflknas;fldkn")
 
 
