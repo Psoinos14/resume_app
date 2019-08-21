@@ -1,11 +1,17 @@
 class Api::StudentsController < ApplicationController
-
   def index
-    @students = Student.all
-    render 'index.json.jb'
+    student = Student.second
+    render json: {
+      profile: student,
+      capstones: student.capstones,
+      educations: student.educations,
+      experiences: student.experiences,
+      skills: student.skills
+    }
   end
 
   def show
+    student = Student.where(email: 'name')
     @student = Student.find_by(id: params[:id])
     render 'show.json.jb'
   end
