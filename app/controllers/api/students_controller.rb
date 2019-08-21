@@ -1,13 +1,21 @@
 class Api::StudentsController < ApplicationController
 
   def index
-    @students = Student.all
-    render 'index.json.jb'
+    current_student = Student.second
+    if current_student
+      render json: { student: current_student }
+    else
+      render json: { error: 'please log in' }
+    end
   end
 
   def show
-    @student = Student.find_by(id: params[:id])
-    render 'show.json.jb'
+    current_student = Student.second
+    if current_student
+      render json: { student: current_student }
+    else
+      render json: { error: 'please log in' }
+    end
   end
 
   def create
