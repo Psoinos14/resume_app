@@ -9,6 +9,10 @@
   personal_url: student.personal_url,
   resume_url: student.resume_url,
   github_url: student.github_url,
-  photo: student.photo
+  photo: student.photo,
+  capstones: student.capstones,
+  experiences: student.experiences,
+  educations: student.educations,
+  skills: student.skills
 }
 end
