@@ -1,5 +1,4 @@
 class Api::StudentsController < ApplicationController
-
   def index
     current_student = Student.second
     if current_student
